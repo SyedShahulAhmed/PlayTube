@@ -1,8 +1,11 @@
 import React from 'react'
+import VideoPlayer from '../components/VideoPlayer'
 
 const Video = () => {
   return (
-    <div>Video</div>
+    <div className=''>
+      <VideoPlayer/>
+    </div>
   )
 }
 

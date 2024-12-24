@@ -4,15 +4,19 @@ import Footer from './components/Footer'
 import { Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
 import Video from './pages/Video'
+import { useState } from 'react'
+import SideBar from './components/SideBar'
 const App = () => {
+
+  const [Show,setShow] = useState(true)
+
   return (
     <div>
-      <NavBar/>
+      <NavBar setShow={setShow}/>
       <Routes>
-        <Route path='/' element={<Home/>}/>
+        <Route path='/' element={<Home Show={Show}/>}/>
         <Route path='/video/:categoryId/:videoId' element={<Video/>}/>
       </Routes>
-      <Footer/>
     </div>
   )
 }

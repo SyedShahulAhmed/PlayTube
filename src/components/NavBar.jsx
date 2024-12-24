@@ -1,10 +1,10 @@
 import React from 'react'
 import { images } from '../assets/index.js'
-const NavBar = () => {
+const NavBar = ({setShow}) => {
   return (
-    <nav className='flex justify-between bg-white w-full shadow-md p-4 overflow-hidden'>
+    <nav className='flex justify-between bg-white w-full shadow-md sticky top-0 right-0 left-0  p-4 overflow-hidden'>
         <div className='flex justify-center items-center gap-5 cursor-pointer px-1'>
-            <img src={images.menu} alt="" className='w-7 hidden md:block'/>
+            <img src={images.menu} alt="" className='w-7 hidden md:block' onClick={() => {setShow(p => p=== false ? true : false)}}/>
             <div className='flex justify-center items-center gap-2 '>
             <img src={images.logo} alt="" className='w-8  cursor-pointer'/>
             <h1 className='text-xl font-semibold  cursor-pointer hidden md:block'>PlayTube</h1>

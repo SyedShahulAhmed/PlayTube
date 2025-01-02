@@ -9,7 +9,7 @@ const Home = ({ Show }) => {
       <SideBar Show={Show} />
       <div
         className={`${
-          Show ? "pl-[16%]" : "pl-[8%]"
+          Show ? "pl-3 md:pl-[16%]" : "pl-[8%]"
         } bg-[#f9f9f9] pr-[2%] py-[20px]`}
       >
         <Feed />

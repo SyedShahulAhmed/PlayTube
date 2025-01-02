@@ -2,7 +2,7 @@ import React from 'react'
 import { Channels, SideLinks } from '../assets/index'
 const SideBar = ({Show}) => {
   return (
-    <div className={`${Show ? 'w-[5%]':'w-[15%]'}' fixed pt-[20px] pl-[2%] h-screen`}>
+    <div className={`${Show ? 'w-[5%]':'w-[15%]'}' hidden md:block fixed pt-[20px]  md:pl-[2%] h-screen`}>
       <div className='flex flex-col gap-4 mb-5 '>
         {SideLinks.map((item) => (
           <div key={item.id} className='flex justify-start items-center gap-4 cursor-pointer'>

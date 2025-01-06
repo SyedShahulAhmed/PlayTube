@@ -35,47 +35,56 @@ export const SideLinks = [
     {
         id:1,
         img:home,
-        name:"Home"
+        name:"Home",
+        Cate:0
     },
     {
         id:2,
         img:game,
-        name:"Gaming"
+        name:"Gaming",
+        Cate:20
     },
     {
         id:3,
         img:sports,
-        name:"Sports"
+        name:"Sports",
+        Cate:17
     },
     {
         id:4,
         img:entertainment,
-        name:"Entertainment"
+        name:"Entertainment",
+        Cate:24
     },
     {
         id:5,
         img:technology,
-        name:"Technology"
+        name:"Technology",
+        Cate:28
     },
     {
         id:6,
         img:car,
-        name:"Automoblies"
+        name:"Automoblies",
+        Cate:2
     },
     {
         id:7,
         img:music,
-        name:"Music"
+        name:"Music",
+        Cate:10
     },
     {
         id:8,
         img:Blogs,
-        name:"Blogs"
+        name:"Blogs",
+        Cate:22
     },
     {
         id:9,
         img:news,
-        name:"News"
+        name:"News",
+        Cate:25
     },
 ]
 
@@ -88,7 +97,7 @@ export const Channels = [
     {
         id:2,
         img:two,
-        channel:"Chai aur Code"
+        channel:"ChaiaurCode"
     },
     {
         id:3,
@@ -103,6 +112,6 @@ export const Channels = [
     {
         id:5,
         img:five,
-        channel:"Shradha Khapra"
+        channel:"ShradhaKhapra"
     },
 ]

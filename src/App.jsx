@@ -6,12 +6,14 @@ import Home from './pages/Home'
 import Video from './pages/Video'
 import { useState } from 'react'
 import SideBar from './components/SideBar'
+import ScrollTop from './components/ScrollTop'
 const App = () => {
 
   const [Show,setShow] = useState(true)
 
   return (
     <div>
+      <ScrollTop/>
       <NavBar setShow={setShow}/>
       <Routes>
         <Route path='/' element={<Home Show={Show}/>}/>
